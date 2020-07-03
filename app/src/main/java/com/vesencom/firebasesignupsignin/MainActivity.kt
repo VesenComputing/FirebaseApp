@@ -75,16 +75,5 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onStart() {
-        super.onStart()
 
-        val currentUser = auth.currentUser
-//        updateUi(currentUser)
-    }
-
-//    private fun updateUi(currentUser: FirebaseUser?) {
-
-//        val user = auth.currentUser
-//        val uid = user!!.uid
-//    }
 }
