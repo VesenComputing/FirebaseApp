@@ -13,7 +13,6 @@ import kotlinx.android.synthetic.main.activity_log_in.*
 
 class LogInActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
-    lateinit var database: DatabaseReference
 
     private var fUserId: String = " "
 

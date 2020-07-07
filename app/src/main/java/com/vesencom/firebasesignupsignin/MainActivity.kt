@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                         Log.d("success", "create user with email is successful")
 
                         fUserID = auth.currentUser!!.uid
-                        database = FirebaseDatabase.getInstance().reference.child("dbfire").child(fUserID)
+//                        database = FirebaseDatabase.getInstance().reference.child("dbfire").child(fUserID)
                         Toast.makeText(this, "Sucess", Toast.LENGTH_LONG).show()
 
 
