@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggedInActivity">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="0dp"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="@string/vesen_computing_solutions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textViewEmailAddress"/>
+
+    <TextView
+        android:id="@+id/textViewEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Welcome @emailaddress"
+        app:layout_constraintStart_toStartOf="@id/textViewWelcome"
+        app:layout_constraintEnd_toEndOf="@id/textViewWelcome"
+        app:layout_constraintTop_toBottomOf="@id/textViewWelcome"
+        app:layout_constraintBottom_toTopOf="@id/buttonLogout"/>
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        app:layout_constraintStart_toStartOf="@id/textViewWelcome"
+        app:layout_constraintEnd_toEndOf="@id/textViewWelcome"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmailAddress"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

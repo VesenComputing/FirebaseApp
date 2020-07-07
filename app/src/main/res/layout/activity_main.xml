@@ -32,14 +32,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextUsername"
-        app:layout_constraintBottom_toTopOf="@+id/textViewPassword"/>
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"/>
 
     <EditText
-        android:id="@+id/textViewPassword"
+        android:id="@+id/editTextPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Password"
         android:textSize="18sp"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"
         app:layout_constraintEnd_toEndOf="@id/editTextTextPersonEmail"
         app:layout_constraintHorizontal_bias="0.0"
@@ -53,6 +54,19 @@
         android:text="SignUp"
         app:layout_constraintStart_toStartOf="@id/editTextTextPersonEmail"
         app:layout_constraintEnd_toEndOf="@id/editTextTextPersonEmail"
-        app:layout_constraintTop_toBottomOf="@id/textViewPassword"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/mvSignUp"
+        />
+    <TextView
+        android:id="@+id/mvSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/already_have_an_account_sign_in"
+        app:layout_constraintStart_toStartOf="@id/editTextTextPersonEmail"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextPersonEmail"
+        app:layout_constraintTop_toBottomOf="@id/buttonSignUp"
         app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
